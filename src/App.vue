@@ -3,9 +3,11 @@
     <HeaderComponent></HeaderComponent>
     <SliderComponent></SliderComponent>
     <div class="center">
+      <LastArticles></LastArticles>
       <SideBarComponent></SideBarComponent>
+      <div class="clearfix"></div>
     </div>
-
+    <FooterComponent></FooterComponent>
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <MyComponent />
   </div>
@@ -17,6 +19,8 @@ import MyComponent from "./components/MyComponent";
 import HeaderComponent from "./components/HeaderComponent.vue";
 import SliderComponent from "./components/SliderComponent.vue";
 import SideBarComponent from "./components/SideBarComponent.vue";
+import LastArticles from "./components/LastArticles.vue";
+import FooterComponent from "./compoment";
 
 export default {
   name: "App",
@@ -26,6 +30,8 @@ export default {
     HeaderComponent,
     SliderComponent,
     SideBarComponent,
+    LastArticles,
+    FooterComponent,
   },
 };
 </script>
