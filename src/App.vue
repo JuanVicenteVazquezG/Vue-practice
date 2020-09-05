@@ -14,13 +14,13 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-import MyComponent from "./components/MyComponent";
+import HelloWorld from "./components/HelloWorld.vue";
+import MyComponent from "./components/MyComponent.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
 import SliderComponent from "./components/SliderComponent.vue";
 import SideBarComponent from "./components/SideBarComponent.vue";
 import LastArticles from "./components/LastArticles.vue";
-import FooterComponent from "./compoment";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
   name: "App",
