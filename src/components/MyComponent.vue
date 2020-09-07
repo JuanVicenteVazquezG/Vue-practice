@@ -1,10 +1,11 @@
 <template>
-  <div id="mycomponent">
+  <section id="content">
+    <h2 class="subheader">My Component</h2>
     <hr />
-    <h1>Hello World Again!</h1>
+    <h1>this is a proof</h1>
     <h2>{{subtitle}}</h2>
     <hr />
-  </div>
+  </section>
 </template>
 
 <script>

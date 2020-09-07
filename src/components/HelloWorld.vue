@@ -1,8 +1,11 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <MyComponent />
-  </div>
+  <section id="content">
+    <h2 class="subheader">Hello world Component</h2>
+    <div class="hello">
+      <h1>{{ msg }}</h1>
+      <MyComponent />
+    </div>
+  </section>
 </template>
 
 <script>
@@ -19,5 +22,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
-
 </style>

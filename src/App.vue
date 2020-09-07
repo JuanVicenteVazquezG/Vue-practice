@@ -3,34 +3,28 @@
     <HeaderComponent></HeaderComponent>
     <SliderComponent></SliderComponent>
     <div class="center">
-      <LastArticles></LastArticles>
+      <router-view></router-view>
       <SideBarComponent></SideBarComponent>
       <div class="clearfix"></div>
     </div>
     <FooterComponent></FooterComponent>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-    <MyComponent />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-import MyComponent from "./components/MyComponent.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
 import SliderComponent from "./components/SliderComponent.vue";
 import SideBarComponent from "./components/SideBarComponent.vue";
-import LastArticles from "./components/LastArticles.vue";
+// import LastArticles from "./components/LastArticles.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
-    MyComponent,
     HeaderComponent,
     SliderComponent,
     SideBarComponent,
-    LastArticles,
+    // LastArticles,
     FooterComponent,
   },
 };

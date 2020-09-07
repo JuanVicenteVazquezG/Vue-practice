@@ -1,29 +1,29 @@
-import { createApp } from 'vue';
-// import { createRouter, createWebHistory } from 'vue-router';
-import { createRouter } from 'vue-router';
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
 import App from './App.vue';
-
 import LastArticles from './components/LastArticles.vue';
 import MyComponent from './components/MyComponent.vue';
+import HelloWorld from './components/HelloWorld.vue';
 
+Vue.config.productionTip = false;
 
-// const routerHistory = createWebHistory();
+Vue.use(VueRouter);
+const routes = [
+    { path: '/home', component: LastArticles },
+    { path: '/last-articles', component: LastArticles },
+    { path: '/mi-component', component: MyComponent },
+    { path: '/hello-world', component: HelloWorld },
+    { path: '/', component: LastArticles },
+];
 
-const router = createRouter({
-    // history: routerHistory,
-    routes: [
-        { path: '/home', component: LastArticles },
-        { path: '/last-articles', component: LastArticles },
-        { path: '/my-component', component: MyComponent },
-        { path: '/', component: LastArticles },
-    ]
+const router = new VueRouter({
+    routes,
+    mode: 'history',
 });
 
-const Vue = createApp(App);
+new Vue({
+    router,
+    render: (h) => h(App),
+}).$mount('#app');
 
-Vue.use(router);
-
-Vue.mount('#app');
-
-export default router;
