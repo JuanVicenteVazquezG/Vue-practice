@@ -13,19 +13,19 @@
       <nav id="menu">
         <ul>
           <li>
-            <a href="index.html">Inicio</a>
+            <router-link to="/home">Home</router-link>
           </li>
           <li>
-            <a href="blog.html">Blog</a>
+            <router-link to="/blog">Blog</router-link>
           </li>
           <li>
-            <a href="formulario.html">Formulario</a>
+            <router-link to="/form">Form</router-link>
           </li>
           <li>
-            <a href="#">Pagina 1</a>
+            <router-link to="/page">Page 1</router-link>
           </li>
           <li>
-            <a href="#">Pagina 2</a>
+            <router-link to="/my-component">Page 2</router-link>
           </li>
         </ul>
       </nav>

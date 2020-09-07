@@ -15,7 +15,6 @@
 import HeaderComponent from "./components/HeaderComponent.vue";
 import SliderComponent from "./components/SliderComponent.vue";
 import SideBarComponent from "./components/SideBarComponent.vue";
-// import LastArticles from "./components/LastArticles.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
@@ -24,7 +23,6 @@ export default {
     HeaderComponent,
     SliderComponent,
     SideBarComponent,
-    // LastArticles,
     FooterComponent,
   },
 };
