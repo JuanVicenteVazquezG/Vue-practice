@@ -22,7 +22,7 @@
             <router-link to="/form">Form</router-link>
           </li>
           <li>
-            <router-link to="/page">Page 1</router-link>
+            <router-link :to="{name:'PageComponent', params: { id: 'Federico',} }">Page 1</router-link>
           </li>
           <li>
             <router-link to="/my-component">Page 2</router-link>
